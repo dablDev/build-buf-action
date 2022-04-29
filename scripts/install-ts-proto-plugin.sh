@@ -9,6 +9,8 @@ PLUGIN=protoc-gen-ts-proto
 VER_FILE=$BIN_DIR/$PLUGIN.ver
 PLUGIN_EXE=$BIN_DIR/$PLUGIN
 
+echo $PLUGIN_EXE
+
 # Can't use grep with `set -e pipfail`...
 CUR_VER=
 if [ -f "$VER_FILE" ]; then CUR_VER=($(<$VER_FILE)); fi
