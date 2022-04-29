@@ -4,7 +4,7 @@ set -euo pipefail
 source scripts/executor-info.sh
 
 PLUGIN_VERSION=$1
-BIN_DIR=$(pwd)/.bin
+BIN_DIR=/.bin
 PLUGIN=protoc-gen-grpc-java
 VER_FILE=$BIN_DIR/$PLUGIN.ver
 PLUGIN_EXE=$BIN_DIR/$PLUGIN
